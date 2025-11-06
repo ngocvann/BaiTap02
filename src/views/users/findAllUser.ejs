@@ -7,14 +7,14 @@
       <th>Address</th>
       <th>Action</th>
     </tr>
-    <% for(let i=0l i < datalist.length; i++) { %>
+    <% for(let i=0; i < datalist.length; i++) { %>
     <tr>
       <td><%= datalist[i].email %></td>
       <td><%= datalist[i].firstName %></td>
       <td><%= datalist[i].lastName %></td>
       <td><%= datalist[i].address %></td>
       <td>
-        <a href="/edit-crud?id=<%= datalist[i].id %">Edit</a> ||
+        <a href="/edit-crud?id=<%= datalist[i].id %>">Edit</a> ||
         <a href="/delete-crud?id=<%= datalist[i].id %>">Delete</a>
       </td>
     </tr>
